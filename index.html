@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>土用丑の日 「薪焼うなぎ」ご予約受付中！ - 薪焼うなぎ銀座おのでら本店</title>
+    <!-- Tailwind CSS CDNを読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Noto Sans JP) を読み込み -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* カスタムフォント設定 */
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        /* スムーズスクロール */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* ローディングスピナーのスタイル */
+        .loader {
+            border: 4px solid #f3f3f3; /* Light grey */
+            border-top: 4px solid #a04000; /* Orange */
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- 1. ファーストビュー -->
+    <header class="relative h-screen flex items-center justify-center text-white overflow-hidden">
+        <!-- 背景画像 (Imgurから取得した直接の画像URLを設定) -->
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://i.imgur.com/dRIzdGV.jpeg');">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+
+        <div class="relative z-10 text-center p-4">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                土用丑の日 「薪焼うなぎ」<br>ご予約受付中！
+            </h1>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://docs.google.com/forms/d/1jSgnsziAltRNSZbSwHEWcvm9ypadFOi0dWAfOL9iDTc/preview" class="bg-orange-700 hover:bg-orange-800 text-white font-bold py-4 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    【今すぐ予約】
+                </a>
+                <!-- メニューラインナップセクションへのスクロールリンク -->
+                <a href="#menu-lineup" class="bg-gray-700 hover:bg-gray-800 text-white font-bold py-4 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    【メニューラインナップはこちら】
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+
+        <!-- 2. 土用丑の日とは？ -->
+        <section class="mb-16 bg-white p-8 rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-center mb-8 text-orange-700">2025年土用丑の日は・・・</h2>
+            <div class="text-center mb-6">
+                <p class="text-4xl font-extrabold text-orange-600 my-2">一の丑　7月19日（土） </p>
+                <p class="text-4xl font-extrabold text-orange-600 my-2">二の丑　7月31日（木）</p>
+            </div>
+            <p class="text-lg leading-relaxed text-center max-w-3xl mx-auto">
+                夏バテ予防にぴったりの丑の日限定の特別メニューをご用意！ </p>
+                今年の土用の丑の日を機会に、ぜひ「薪焼うなぎ 銀座おのでら 本店」のこだわりの国産うなぎをご自宅や職場でお楽しみください。
+            </p>
+        </section>
+
+        <!-- 3. こだわりの技 -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-12 text-orange-700">銀座おのでら本店のこだわり</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- こだわり1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                    <img src="https://i.imgur.com/IK84kQV.jpeg" alt="国産うなぎのイメージ" class="w-full h-48 object-cover rounded-md mb-6 shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-900">全て国産のうなぎを使用</h3>
+                    <p class="text-base leading-relaxed text-gray-700">
+                        豊かな自然の中で育った、上質な国産うなぎのみを厳選して使用しています。安心してお召し上がりいただける、確かな品質をお届けします。
+                    </p>
+                </div>
+                <!-- こだわり3 (入れ替え後) -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                    <img src="https://i.imgur.com/caLrtKe.jpeg" alt="炙り焼きの技のイメージ" class="w-full h-48 object-cover rounded-md mb-6 shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-900">唯一無二の薪焼きうなぎ</h3>
+                    <p class="text-base leading-relaxed text-gray-700">
+                        高温で一気に焼き上げることで、外は香ばしく、中はふっくらとした絶妙な食感に。余分な脂を落とし、うなぎ本来の旨みを凝縮させます。
+                    </p>
+                </div>
+                <!-- こだわり2 (入れ替え後) -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                    <img src="https://i.imgur.com/JYi6cKn.jpeg" alt="秘伝のタレのイメージ" class="w-full h-48 object-cover rounded-md mb-6 shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-900">赤ワインを配合した秘伝のタレ</h3>
+                    <p class="text-base leading-relaxed text-gray-700">
+                        伝統のタレに、寺田料理長が厳選した赤ワインを配合。深みとコクが増し、うなぎの旨みを一層引き立てる、当店ならではの特別な味わいです。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. メニューラインナップ -->
+        <section id="menu-lineup" class="mb-16 bg-white p-8 rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-center mb-12 text-orange-700">メニューラインナップ</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- 国産うないくら重 (並・上をまとめる) -->
+                <div class="flex flex-col sm:flex-row items-center sm:items-start bg-gray-50 p-6 rounded-lg shadow-md">
+                    <img src="https://i.imgur.com/CuGTxrq.jpeg" alt="国産うないくら重" class="w-36 h-36 object-cover rounded-md mb-4 sm:mb-0 sm:mr-6 flex-shrink-0 shadow-sm">
+                    <div class="text-center sm:text-left flex-grow">
+                        <h3 class="text-xl font-semibold text-orange-600 mb-2">【国産うないくら重～あかね色の輝き～】</h3>
+                        <p class="text-base text-gray-700 mb-2">うなぎと輝くいくらの贅沢な組み合わせ。うなぎの旨みといくらのプチプチとした食感が口の中で広がる、見た目も華やかな逸品です。</p>
+                        <p class="text-2xl font-bold text-gray-900 mt-4">
+                            並 3,500円<span class="text-lg font-normal">（税込）</span><br>
+                            上 4,900円<span class="text-lg font-normal">（税込）</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- 国産うな重 (並・上をまとめる) -->
+                <div class="flex flex-col sm:flex-row items-center sm:items-start bg-gray-50 p-6 rounded-lg shadow-md">
+                    <img src="https://i.imgur.com/rkONcrn.jpeg" alt="国産うな重" class="w-36 h-36 object-cover rounded-md mb-4 sm:mb-0 sm:mr-6 flex-shrink-0 shadow-sm">
+                    <div class="text-center sm:text-left flex-grow">
+                        <h3 class="text-xl font-semibold text-orange-600 mb-2">【国産うな重】</h3>
+                        <p class="text-base text-gray-700 mb-2">定番ながらも妥協のない、職人の技が光るうな重。ふっくらとしたうなぎと秘伝のタレが絶妙です。</p>
+                        <p class="text-2xl font-bold text-gray-900 mt-4">
+                            並 3,000円<span class="text-lg font-normal">（税込）</span><br>
+                            上 4,400円<span class="text-lg font-normal">（税込）</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- メニューアイテム5 (蒲焼(一本)) -->
+                <div class="flex flex-col sm:flex-row items-center sm:items-start bg-gray-50 p-6 rounded-lg shadow-md md:col-span-2">
+                    <img src="https://i.imgur.com/Okkr7aR.jpeg" alt="蒲焼(一本)" class="w-36 h-36 object-cover rounded-md mb-4 sm:mb-0 sm:mr-6 flex-shrink-0 shadow-sm">
+                    <div class="text-center sm:text-left flex-grow">
+                        <h3 class="text-xl font-semibold text-orange-600 mb-2">【蒲焼(一本)】</h3>
+                        <p class="text-base text-gray-700 mb-2">お好みの食べ方でお楽しみください。</p>
+                        <p class="text-2xl font-bold text-gray-900">5,400円<span class="text-lg font-normal">（税込）</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ✨ 新機能: うなぎに合う献立提案 ✨ -->
+        <section class="mb-16 bg-white p-8 rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-center mb-8 text-orange-700">✨ うなぎに合う献立提案 ✨</h2>
+            <p class="text-lg leading-relaxed text-center max-w-3xl mx-auto mb-8">
+                当店のうなぎの蒲焼をさらに美味しく楽しむための、おすすめ献立をAIが提案します。
+                副菜、汁物、飲み物など、うなぎとの相性抜群の組み合わせを見つけて、食卓を豊かにしましょう！
+            </p>
+            <div class="text-center mb-8">
+                <button id="generate-menu-btn" class="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    献立を提案してもらう！
+                    <span id="loading-spinner" class="loader hidden"></span>
+                </button>
+            </div>
+            <div id="menu-suggestions" class="bg-gray-50 p-6 rounded-lg shadow-inner min-h-[100px] text-gray-700 leading-relaxed whitespace-pre-wrap">
+                <!-- ここに献立提案が表示されます -->
+                献立提案ボタンを押すと、AIがうなぎにぴったりの献立を提案します。
+            </div>
+        </section>
+        <!-- ✨ 新機能ここまで ✨ -->
+
+        <!-- 5. 予約方法 -->
+        <section id="reservation" class="mb-16 bg-white p-8 rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-center mb-12 text-orange-700">ご予約方法</h2>
+            <p class="text-lg leading-relaxed text-center mb-8">スムーズなお受け取りのために、事前のご予約をおすすめしております。</p>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- オンライン予約 -->
+                <div class="text-center bg-gray-50 p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-4">オンライン予約</h2>
+                    <!-- ここをaタグに修正しました -->
+                    <a href="https://docs.google.com/forms/d/1jSgnsziAltRNSZbSwHEWcvm9ypadFOi0dWAfOL9iDTc/preview" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out mb-24"> <!-- mb-12に変更 -->
+                        オンライン予約はこちら
+                    </a>
+                   <p class="text-4xl font-extrabold text-orange-600 mb-4">
+                    <p class="text-base text-gray-700">24時間受付中。ご希望の商品と受け取り日時を選択するだけで、簡単にご予約が完了します。</p>
+                </div>
+                <!-- 電話予約 -->
+                <div class="text-center bg-gray-50 p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">お電話</h3>
+                    <!-- 電話番号をaタグで囲み、tel:スキームを設定 -->
+                    <p class="text-4xl font-extrabold text-orange-600 mb-4">
+                        <a href="tel:0364265122" class="text-orange-600 hover:underline">03-6426-5122</a>
+                    </p>
+                    <p class="text-base text-gray-700 mb-6">受付時間：11:00〜15:00 / 17:00〜22:00</p>
+                    <p class="text-base text-gray-700">ご不明な点や、特別なご要望がございましたら、お気軽にお電話ください。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. お受け取り情報 -->
+        <section class="mb-16 bg-white p-8 rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-center mb-12 text-orange-700">お受け取り情報</h2>
+            <p class="text-lg leading-relaxed text-center mb-8">ご予約いただいた商品は、店頭にてお渡しいたします。</p>
+
+            <div class="grid md:grid-cols-2 gap-8 text-lg">
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">お渡し日時</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li><strong>7月19日(土)</strong>：11:00〜21:00</li>
+                        <li><strong>7月31日(木)</strong>：11:00〜21:00</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">お渡し場所</h3>
+                    <p class="text-gray-700">薪焼うなぎ 銀座おのでら 本店 店頭</p>
+                    <p class="text-gray-700">東京都港区赤坂4-2-8 カランドリエビル1F</p>
+                    <!-- Googleマップ埋め込み (提供された正確な埋め込みコードを設定) -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.073255986458!2d139.73332381208832!3d35.675198172475056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d002618e943%3A0x883e2142400aa5!2z6Jaq54S844GG44Gq44GOIOmKgOW6p-OBiuOBruOBp-OCiSDmnKzlupc!5e0!3m2!1sja!2sjp!4v1752234964451!5m2!1sja!2sjp" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-lg shadow-md mt-4"></iframe>
+                </div>
+                <div class="md:col-span-2">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">お支払い</h3>
+                    <p class="text-gray-700">現地にてお支払いいただけます (現金 / クレジットカード / キャッシュレス決済)</p>
+                </div>
+                <div class="md:col-span-2">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">キャンセルポリシー</h3>
+                    <p class="text-gray-700">前日17時までにご連絡ください。</p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>7/19 の場合：7/18 17:00まで</li>
+                        <li>7/31 の場合：7/30 17:00まで</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. 店舗情報 -->
+        <section class="mb-16 bg-white p-8 rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-center mb-12 text-orange-700">店舗情報</h2>
+            <div class="grid md:grid-cols-2 gap-8 text-lg">
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">店名</h3>
+                    <p class="text-gray-700">薪焼うなぎ 銀座おのでら 本店</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">住所</h3>
+                    <p class="text-gray-700">東京都港区赤坂4-2-8 カランドリエビル1F</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">営業時間</h3>
+                    <p class="text-gray-700">ランチ：11:00〜15:00 (L.O. 14:30)</p>
+                    <p class="text-gray-700">ディナー：17:00〜22:00 (L.O. 21:30)</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">電話番号</h3>
+                    <p class="text-gray-700">03-6426-5122</p>
+                </div>
+            </div>
+            <!-- 店舗外観イメージ (Imgurから取得した直接の画像URLを設定) -->
+            <img src="https://i.imgur.com/yOlGlF0.jpeg" alt="店舗外観" class="w-full h-auto rounded-lg shadow-md mt-8">
+        </section>
+
+    </main>
+
+    <!-- フッター / 再度CTA -->
+    <footer class="bg-orange-700 text-white py-12 text-center">
+        <div class="container mx-auto px-4">
+            <p class="text-2xl font-bold mb-6 leading-relaxed">
+                今年の土用丑の日は、薪焼 銀座おのでら 本店の国産うなぎで、贅沢なひとときを。<br>
+                数量限定のため、お早めのご予約をおすすめいたします。
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <!-- オンライン予約ページへのリンク (実際のURLに置き換えください) -->
+                <a href="https://docs.google.com/forms/d/1jSgnsziAltRNSZbSwHEWcvm9ypadFOi0dWAfOL9iDTc/preview" class="bg-white text-orange-700 hover:bg-gray-100 font-bold py-4 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    【今すぐ予約する】
+                </a>
+                <!-- 電話番号へのリンク -->
+                <a href="tel:0364265122" class="bg-gray-700 hover:bg-gray-800 text-white font-bold py-4 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    【お電話でのご予約はこちら】
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const generateMenuBtn = document.getElementById('generate-menu-btn');
+            const menuSuggestionsDiv = document.getElementById('menu-suggestions');
+            const loadingSpinner = document.getElementById('loading-spinner');
+
+            generateMenuBtn.addEventListener('click', async () => {
+                menuSuggestionsDiv.textContent = ''; // Clear previous suggestions
+                loadingSpinner.classList.remove('hidden'); // Show spinner
+
+                const prompt = "うなぎの蒲焼に合う献立（主菜以外の副菜、汁物、飲み物）を3つ提案してください。和食中心で、家庭で簡単に用意できるものを提案してください。各提案は箇条書きで、具体的な料理名を挙げてください。";
+
+                let chatHistory = [];
+                chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+                const payload = { contents: chatHistory };
+                const apiKey = ""; // If you want to use models other than gemini-2.0-flash or imagen-3.0-generate-002, provide an API key here. Otherwise, leave this as-is.
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                try {
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    const result = await response.json();
+
+                    if (result.candidates && result.candidates.length > 0 &&
+                        result.candidates[0].content && result.candidates[0].content.parts &&
+                        result.candidates[0].content.parts.length > 0) {
+                        const text = result.candidates[0].content.parts[0].text;
+                        menuSuggestionsDiv.textContent = text;
+                    } else {
+                        menuSuggestionsDiv.textContent = '献立の提案を取得できませんでした。もう一度お試しください。';
+                        console.error('Unexpected API response structure:', result);
+                    }
+                } catch (error) {
+                    menuSuggestionsDiv.textContent = '献立の提案中にエラーが発生しました。ネットワーク接続を確認してください。';
+                    console.error('Error fetching menu suggestions:', error);
+                } finally {
+                    loadingSpinner.classList.add('hidden'); // Hide spinner
+                }
+            });
+        });
+    </script>
+</body>
+</html>
